@@ -1,0 +1,126 @@
+/***** BASE STYLE *****/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.supercontainer {
+  position: relative;
+  margin-top: 80px;
+  margin-bottom: 100px;
+  height: 90%;
+  width: 100%;
+  vertical-align: middle;
+}
+
+header {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.75em;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.container {
+  width: 100%;
+  position: relative;
+}
+
+#chicken,
+#beef,
+#sushi {
+  position: relative;
+  margin-bottom: 50px;
+  border: 1px solid black;
+  background-color: rgb(153, 153, 153);
+  height: 350px;
+  left: 5%;
+}
+
+#chicken,
+#beef {
+  margin-right: 5%;
+}
+
+h2 {
+  position: absolute;
+  right: 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.25em;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  text-align: center;
+  width: 200px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+p {
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: "Indie Flower", cursive;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#chicken h2 {
+  background-color: rgb(212, 152, 153);
+}
+
+#beef h2 {
+  background-color: rgb(191, 70, 70);
+  color: #ffffff;
+}
+
+#sushi h2 {
+  background-color: rgb(228, 208, 155);
+}
+
+/***** Responsive Framework *****/
+.container {
+  width: 100%;
+}
+
+/***** desktop *****/
+/*.col-lg-3*/
+@media (min-width: 992px) {
+  .col-lg-4 {
+    float: left;
+    width: 26.6%;
+  }
+}
+
+/***** tablet *****/
+/* .col-md-6 */
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6 {
+    float: left;
+    width: 42.5%;
+  }
+
+  #sushi {
+    width: 90%;
+    /*clear: left;*/
+    clear: both;
+  }
+}
+
+/***** mobile *****/
+/* .col-sm-12 */
+@media (max-width: 767px) {
+  .col-sm-12 {
+    float: left;
+    width: 90%;
+  }
+}
