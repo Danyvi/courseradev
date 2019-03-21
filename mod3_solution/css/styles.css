@@ -14,22 +14,6 @@ body {
 /***** END OF BODY *****/
 
 /***** NAVBAR *****/
-/* 
-The navbar should have a company name (i.e., navbar-brand class)
-called "Food, LLC" that is aligned to the left side of the navbar.
-
-As browser window narrower mobile menu button appear.
-For desktop and tablet view, the navbar should not contain anything else.
-No other buttons should be visible. (Hint: use "visible-xs" class.
-
-Navbar - Mobile View: Create a simple menu button (3 horizontal bars).
-When user clicks that button, a dropdown menu should appear containing 3 items:
-Chicken, Beef and Sushi.
-The dropdown should take up the entire width of the browser window.
-Make sure that the dropdown menu has background color set that distinguishes
-it from the rest of the content.
-Lecture 31 example for reference.
-*/
 #header-nav {
   background-color: rgb(212, 88, 92);
   border-radius: 0;
@@ -62,7 +46,6 @@ Lecture 31 example for reference.
   color: rgb(0, 0, 0);
   text-align: center;
 }
-
 #nav-list a:hover {
   background: rgb(230, 231, 232);
 }
@@ -76,33 +59,8 @@ Lecture 31 example for reference.
 }
 /***** END NAVBAR *****/
 
-/***** PAGE HEADING *****/
-/* 
-The page heading should say "Our Menu" and be centered within the browser window.
-You must use bootstrap class to accomplish this (a class that center the text)
-*/
-
-/***** END OF PAGE HEADING *****/
-
 /***** MAIN CONTENT *****/
-/*
-Create a single really tall section that use the Bootstrap grid and take up
-the entire width of the browser window (minus some margins, of course)
-for all views: desktop, tablet, and mobile.
-To make the section really tall, you can either fill it out with a lot of text
-or simply set its height to something like 1000px.
-It needs to be tall enough to cause scrolling down to be required to view
-the bottom of the section.
-Make sure its background color is set to distinguish it from 
-the rest of the content. 
-(Hint: don't forget to have an element with a 
-class="container" or class="container-fluid" wrapping your grid.
-Remember that to have the grid do something "always", i.e.,no matter what
-browser window size, use the "col-xs-..." classes.
-In this case, since we want the section to take up the entire row, use 
-"col-xs-12".) 
-*/
-h1 {
+h2 {
   margin-bottom: 30px;
 }
 #parag {
@@ -111,55 +69,37 @@ h1 {
   padding: 0 30px;
   margin-bottom: 50px;
 }
-
-#parag h2 {
+#parag h3 {
   text-align: center;
   margin-bottom: 15px;
 }
-
 #parag p {
   margin-bottom: 15px;
   text-align: justify;
 }
 /***** END OF MAIN CONTENT *****/
 
-/*
-Both the tablet view and the desktop view of what's graded and required is the same
-*/
-
 /***** MEDIA QUERIES *****/
 
-/***** Large Devices Only *****/
-@media (min-width: 1200px) {
-  /*
-  .container {
-    margin-top: 0px;
-    padding: 0;
-  }*/
-}
+/* Desktop and tablets from 992px up */
+/*
+@media (min-width: 992px) {
+  #content {
+    width: 100%;
+  }
+}*/
 
-/***** Medium Devices Only *****/
-@media (min-width: 992px) and (max-width: 1199px) {
-  /*
-  .container {
-    margin-top: 0px;
-    padding: 0;
-  }*/
-}
-
-/***** Small Devices Only *****/
 @media (max-width: 991px) {
   /*
-  .container {
-    margin-top: 0px;
-    padding: 0;
+  .container  {
+    width: 85%;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
   }*/
 
-  #parag {
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-    /*padding: 10;
-    height: 3000;*/
+  #content {
+    width: 85%;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
   }
 }
