@@ -1,9 +1,3 @@
-/* 
-Desktop Bootstrap md -based class prefix
-Tablet  Bootstrap sm -based class prefix
-Mobile  Bootstrap xs -based class prefix
-*/
-
 /***** BODY *****/
 body {
   font-size: 16px;
@@ -80,23 +74,7 @@ h2 {
 /***** END OF MAIN CONTENT *****/
 
 /***** MEDIA QUERIES *****/
-
-/* Desktop and tablets from 992px up */
-/*
-@media (min-width: 992px) {
-  #content {
-    width: 100%;
-  }
-}*/
-
 @media (max-width: 991px) {
-  /*
-  .container  {
-    width: 85%;
-    margin-left: 7.5%;
-    margin-right: 7.5%;
-  }*/
-
   #content {
     width: 85%;
     margin-left: 7.5%;
